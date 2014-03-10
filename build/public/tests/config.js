@@ -1,15 +1,10 @@
 (function(global) {
     global.monkeytestjs = {
-        
-        // "facebookId": "000000000000000",
+        "facebookId": "000000000000000",
 
         "local": {
             "env": "localhost"
         },
-
-        // Comment out unnecessary development environments for MonkeyTest
-        // Francisco Preller: 10/03/2014
-
         // "stage": {
         //     "env": [/STAGE URL OR PART OF/],
         //     "facebookId": "222222222222222"
@@ -31,16 +26,9 @@
         ],
         "pages": [
             {
-                "url": "../"
-            },
-            // {
-            //     "url": "core/demo/index.html",
-            //     "tests": [ "page/has_facebook_appid.js" ]
-            // },
-            // {
-            //     "url": "core/demo/index.html?pretendIsAnotherPage=true",
-            //     "tests": [ "page/has_facebook_appid.js", "page/demo_page_test.js" ]
-            // }
+                "url": "../",
+                "tests": [ "page/cannot_submit_without_required.js", "page/check_fields_if_complaint.js" ]
+            }
         ],
         "proxyUrl": "core/proxy.php?mode=native&url=<%= url %>",
         "loadSources": true
