@@ -6,17 +6,17 @@
     <head>
 {{-- Default title --}}
 @section('title')
-  {{-- TODO --}}
+  The Monkeys: Technical Compatibility Test
 @stop
 
 {{-- Default description --}}
 @section('description')
-  {{-- TODO --}}
+  This is a test to assess my compatibility with The Monkeys Team for a role of lead developer. I welcome both the challenge and opportunity to try out The Monkeys' scaffolding and testing suites.
 @stop
 
 {{-- Default keywords --}}
 @section('keywords')
-  {{-- TODO --}}
+  the monkeys, test, laravel validation
 @stop
 
         <meta charset="utf-8">
