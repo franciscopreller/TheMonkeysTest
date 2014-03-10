@@ -13,7 +13,8 @@
 
 Route::get('/', function()
 {
-	return View::make('hello');
+	// Redirect to enquiry page
+	return Redirect::to('enquiry');
 });
 
 Route::controller('enquiry', 'EnquiryController');
