@@ -33,6 +33,19 @@
  * Styles
  */
 
+h1.title {
+	color: #6F2E32;
+	font-size: 2rem;
+	text-align: center;
+	line-height: 2.1rem;
+
+	em {
+		font-style: normal;
+		font-size: 1.25rem;
+		color: #333;
+	}
+}
+
 .enquiry-form {
 	display: block;
 	padding: 20px 0;
@@ -55,6 +68,7 @@
 	select {
 		@include rounded();
 		@include inset-shadows();
+		margin-bottom: 0;
 	}
 
 	input[type="submit"] {
@@ -62,6 +76,12 @@
 		padding: 7px 12px;
 		background: #116582;
 		color: white;
+		margin-top: 10px;
+	}
+
+	small.error {
+		@include rounded();
+		margin-top: 2px;
 	}
 
 }

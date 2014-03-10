@@ -14,6 +14,10 @@
 					</div>
 					<div class="medium-8 columns">
 						{{ Form::text('firstName', Input::old('firstName'), array('required')) }}
+						
+						@if ($errors->has('firstName'))
+							<small class="error">{{ $errors->first('firstName') }}</small>
+						@endif
 					</div>
 				</div>
 			</div>
@@ -28,6 +32,10 @@
 					</div>
 					<div class="medium-8 columns">
 						{{ Form::text('surname', Input::old('surname'), array('required')) }}
+
+						@if ($errors->has('surname'))
+							<small class="error">{{ $errors->first('surname') }}</small>
+						@endif
 					</div>
 				</div>
 			</div>
@@ -42,6 +50,10 @@
 					</div>
 					<div class="medium-8 columns">
 						{{ Form::input('email', 'email', Input::old('email'), array('required')) }}
+
+						@if ($errors->has('email'))
+							<small class="error">{{ $errors->first('email') }}</small>
+						@endif
 					</div>
 				</div>
 			</div>
@@ -56,6 +68,10 @@
 					</div>
 					<div class="medium-8 columns">
 						{{ Form::text('contactNumber', Input::old('contactNumber'), array('required')) }}
+
+						@if ($errors->has('contactNumber'))
+							<small class="error">{{ $errors->first('contactNumber') }}</small>
+						@endif
 					</div>
 				</div>
 			</div>
@@ -72,6 +88,10 @@
 					</div>
 					<div class="medium-8 columns">
 						{{ Form::text('address', Input::old('address'), array('required')) }}
+
+						@if ($errors->has('address'))
+							<small class="error">{{ $errors->first('address') }}</small>
+						@endif
 					</div>
 				</div>
 			</div>
@@ -86,6 +106,10 @@
 					</div>
 					<div class="medium-8 columns">
 						{{ Form::text('suburb', Input::old('suburb'), array('required')) }}
+
+						@if ($errors->has('suburb'))
+							<small class="error">{{ $errors->first('suburb') }}</small>
+						@endif
 					</div>
 				</div>
 			</div>
@@ -100,6 +124,10 @@
 					</div>
 					<div class="medium-8 columns">
 						{{ Form::select('state', $states, Input::old('state'), array('required')) }}
+
+						@if ($errors->has('state'))
+							<small class="error">{{ $errors->first('state') }}</small>
+						@endif
 					</div>
 				</div>
 			</div>
@@ -114,6 +142,10 @@
 					</div>
 					<div class="medium-8 columns">
 						{{ Form::text('postcode', Input::old('postcode'), array('required')) }}
+
+						@if ($errors->has('postcode'))
+							<small class="error">{{ $errors->first('postcode') }}</small>
+						@endif
 					</div>
 				</div>
 			</div>
@@ -130,6 +162,10 @@
 					</div>
 					<div class="medium-8 columns">
 						{{ Form::select('enquiryType', $enquiryTypes, Input::old('enquiryType'), array('required')) }}
+
+						@if ($errors->has('enquiryType'))
+							<small class="error">{{ $errors->first('enquiryType') }}</small>
+						@endif
 					</div>
 				</div>
 			</div>
@@ -144,6 +180,10 @@
 					</div>
 					<div class="medium-8 columns">
 						{{ Form::text('productName', Input::old('productName')) }}
+
+						@if ($errors->has('productName'))
+							<small class="error">{{ $errors->first('productName') }}</small>
+						@endif
 					</div>
 				</div>
 			</div>
@@ -158,6 +198,10 @@
 					</div>
 					<div class="medium-8 columns">
 						{{ Form::text('productSize', Input::old('productSize')) }}
+
+						@if ($errors->has('productSize'))
+							<small class="error">{{ $errors->first('productSize') }}</small>
+						@endif
 					</div>
 				</div>
 			</div>
@@ -172,6 +216,9 @@
 					</div>
 					<div class="medium-8 columns">
 						{{ Form::text('useByDate', Input::old('useByDate')) }}
+						@if ($errors->has('productName'))
+							<small class="error">{{ $errors->first('productName') }}</small>
+						@endif
 					</div>
 				</div>
 			</div>
@@ -186,6 +233,10 @@
 					</div>
 					<div class="medium-8 columns">
 						{{ Form::text('batchCode', Input::old('batchCode')) }}
+
+						@if ($errors->has('batchCode'))
+							<small class="error">{{ $errors->first('batchCode') }}</small>
+						@endif
 					</div>
 				</div>
 			</div>
@@ -200,6 +251,10 @@
 					</div>
 					<div class="medium-8 columns">
 						{{ Form::textarea('enquiry', Input::old('enquiry')) }}
+
+						@if ($errors->has('enquiry'))
+							<small class="error">{{ $errors->first('enquiry') }}</small>
+						@endif
 					</div>
 				</div>
 			</div>
