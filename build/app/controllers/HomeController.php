@@ -5,9 +5,9 @@ class HomeController extends BaseController {
 	// Convert controller to RESTful
 	public $restful = true;
 
-	public function get_index();
+	public function getIndex()
 	{
-		return View::make('hello');
+		return View::make('enquiry');
 	}
 
 }
