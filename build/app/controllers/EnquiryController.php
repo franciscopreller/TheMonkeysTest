@@ -15,6 +15,7 @@ class EnquiryController extends BaseController {
 
 		// Initialize states
 		$view->states = array(
+			''    => '-- Select --',
 			'ACT' => 'Australian Capital Territory',
 			'NSW' => 'New South Wales',
 			'NT'  => 'Northern Territory',
@@ -27,9 +28,10 @@ class EnquiryController extends BaseController {
 
 		// Initialize enquiry types
 		$view->enquiryTypes = array(
-			0 => 'General enquiry',
-			1 => 'Product feedback or enquiry',
-			2 => 'Product complaint'
+			'' => '-- Select --',
+			0  => 'General enquiry',
+			1  => 'Product feedback or enquiry',
+			2  => 'Product complaint'
 		);
 
 		return $view;
